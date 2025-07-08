@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untuk Aisyah Nasution 💖</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ffd6e0, #ffeaea);
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #d6336c;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px auto;
+      max-width: 600px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #ff99cc;
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #emoji {
+      font-size: 40px;
+      margin-top: 20px;
+      display: none;
+      animation: pop 0.5s ease forwards;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    iframe {
+      margin-top: 40px;
+      border-radius: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hai Aisyah Nasution 💕</h1>
+  <p>
+    Dek, ini abang buat web kecil buat adek.  
+    Biar adek tau, abang tuh sayang kali sama adek.  
+    Gak ada hari yang abang lewati tanpa mikirin adek.  
+    Tetaplah jadi alasan abang tersenyum tiap hari ya, Aisyah 💖
+  </p>
+
+  <button onclick="showEmoji()">Abang Sayang Adek 💖</button>
+  <div id="emoji">💖🥰😘💌</div>
+
+  <iframe width="320" height="180" 
+    src="https://www.youtube.com/embed/BR1R5bKUtEk?autoplay=1&loop=1&playlist=BR1R5bKUtEk" 
+    title="Budi Doremi - 123456" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
+  <script>
+    function showEmoji() {
+      const emoji = document.getElementById('emoji');
+      emoji.style.display = 'block';
+      emoji.innerText = randomEmoji();
+    }
+
+    function randomEmoji() {
+      const emojis = ["💖", "🥰", "😘", "💌", "😍", "💞", "💘", "🌹"];
+      return emojis[Math.floor(Math.random() * emojis.length)];
+    }
+  </script>
+
+</body>
+</html>
